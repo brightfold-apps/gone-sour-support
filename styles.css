@@ -1,0 +1,110 @@
+:root {
+  color-scheme: light;
+  --green: #2f6150;
+  --green-dark: #234b3d;
+  --ink: #24362e;
+  --muted: #59675e;
+  --ivory: #f4f3e9;
+  --surface: #fcfcf7;
+  --line: #cbd3c8;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-size: 17px;
+  line-height: 1.65;
+  color: var(--ink);
+  background: var(--ivory);
+  text-rendering: optimizeLegibility;
+}
+
+* { box-sizing: border-box; }
+body { margin: 0; }
+a { color: var(--green-dark); text-underline-offset: .2em; }
+a:hover { text-decoration-thickness: 2px; }
+a:focus-visible, summary:focus-visible { outline: 3px solid var(--green); outline-offset: 5px; border-radius: 4px; }
+img { max-width: 100%; height: auto; display: block; }
+p { margin: 0 0 1rem; }
+h1, h2, h3 { line-height: 1.15; letter-spacing: -.025em; }
+h1 { font-size: clamp(3.1rem, 7vw, 5rem); margin: 0 0 1.5rem; font-weight: 750; }
+h2 { font-size: clamp(1.65rem, 4vw, 2.3rem); margin: 0 0 1.35rem; font-weight: 700; }
+h3 { font-size: 1.1rem; margin: 0 0 .75rem; }
+.wrapper { width: min(1040px, calc(100% - 64px)); margin-inline: auto; }
+.skip-link { position: absolute; top: -100px; left: 20px; padding: 12px 20px; background: var(--surface); z-index: 5; }
+.skip-link:focus { top: 12px; }
+.draft-note { padding: 10px 24px; text-align: center; font-size: .82rem; background: #e8e4d3; color: #4b4c3b; }
+.site-header { display: flex; align-items: center; justify-content: space-between; gap: 20px; padding-block: 26px; }
+.brand { display: inline-flex; align-items: center; gap: 12px; color: var(--ink); text-decoration: none; font-size: 1.5rem; font-weight: 750; letter-spacing: -.03em; }
+.brand img { border-radius: 12px; }
+.site-header nav { display: flex; align-items: center; gap: 28px; font-size: .9rem; }
+.site-header nav a { padding-block: 8px; text-decoration: none; }
+.site-header nav a[aria-current="page"] { text-decoration: underline; text-decoration-thickness: 2px; }
+.hero { display: grid; grid-template-columns: 1fr 280px; align-items: center; gap: 85px; padding-block: 70px 95px; }
+.eyebrow { color: var(--green); font-size: .76rem; letter-spacing: .14em; text-transform: uppercase; font-weight: 700; margin-bottom: 18px; }
+.intro { font-size: 1.2rem; line-height: 1.6; max-width: 34em; }
+.hero-icon { border-radius: 25%; }
+.button { display: inline-flex; align-items: center; gap: 24px; min-height: 50px; margin-top: 20px; padding: 12px 22px; color: var(--surface); background: var(--green); border-radius: 15px; font-weight: 650; text-decoration: none; }
+.button:hover { background: var(--green-dark); }
+.quiet { color: var(--muted); font-size: .9rem; }
+.hero-caption { margin-top: 17px; }
+.how-to { background: var(--green); color: var(--ivory); padding-block: 52px; }
+.how-to-layout { display: grid; grid-template-columns: .8fr 1.2fr; gap: 70px; }
+.how-to h2 { max-width: 8em; margin: 6px 0; }
+.steps { list-style: none; margin: 0; padding: 0; counter-reset: steps; }
+.steps li { counter-increment: steps; display: grid; grid-template-columns: 36px 1fr; column-gap: 18px; padding-block: 15px; }
+.steps li::before { content: counter(steps, decimal-leading-zero); grid-row: 1 / span 2; font-size: .8rem; font-weight: 650; opacity: .8; padding-top: 4px; }
+.steps strong { font-size: 1.1rem; }
+.steps span { font-size: .95rem; color: #e2e9dc; }
+.content-section { padding-block: 85px 55px; scroll-margin-top: 25px; }
+.faq { margin-top: 35px; border-top: 1px solid var(--line); }
+.faq details { border-bottom: 1px solid var(--line); }
+.faq summary { position: relative; padding: 24px 44px 24px 0; font-weight: 650; font-size: 1.1rem; cursor: pointer; list-style: none; }
+.faq summary::-webkit-details-marker { display: none; }
+.faq summary::after { content: "+"; position: absolute; right: 10px; top: 21px; color: var(--green); font-size: 1.5rem; font-weight: 400; line-height: 1.4; }
+.faq details[open] summary::after { content: "−"; }
+.faq details > div { padding: 0 40px 12px 0; max-width: 760px; }
+.contact-section { display: grid; grid-template-columns: 1.1fr .9fr; gap: 70px; padding-block: 30px 75px; }
+.contact-help { align-self: center; padding-left: 30px; border-left: 2px solid var(--line); }
+.contact-help p { font-size: .95rem; color: var(--muted); }
+.pending-contact { color: #6b5126; background: #ebe6d7; padding: 14px 18px; border-radius: 12px; font-size: .9rem; }
+.site-footer { border-top: 1px solid var(--line); display: flex; flex-wrap: wrap; justify-content: space-between; gap: 12px 25px; padding-block: 25px 35px; font-size: .82rem; color: var(--muted); }
+.site-footer p { margin: 0; }
+.legal-content { max-width: 780px; padding-block: 60px 75px; }
+.legal-content h1 { font-size: clamp(2.7rem, 7vw, 4.4rem); }
+.legal-content section { margin-top: 48px; }
+.legal-content section h2 { font-size: 1.5rem; margin-bottom: 20px; }
+.privacy-contact { margin-top: 50px; border-top: 1px solid var(--line); padding-top: 35px; }
+.privacy-contact h2 { font-size: 1.5rem; }
+
+@media (max-width: 760px) {
+  .wrapper { width: calc(100% - 40px); }
+  .site-header { padding-block: 20px; }
+  .site-header nav { gap: 18px; font-size: .82rem; }
+  .brand { gap: 9px; font-size: 1.3rem; }
+  .brand img { width: 36px; height: 36px; border-radius: 10px; }
+  .hero { grid-template-columns: 1fr; gap: 35px; padding-block: 45px 60px; }
+  .hero-icon { width: 150px; height: 150px; grid-row: 1; }
+  .hero h1 { font-size: clamp(3rem, 13vw, 4.5rem); }
+  .intro { font-size: 1.1rem; }
+  .how-to-layout, .contact-section { grid-template-columns: 1fr; gap: 25px; }
+  .how-to { padding-block: 38px; }
+  .how-to h2 { max-width: none; }
+  .content-section { padding-block: 60px 40px; }
+  .faq summary { font-size: 1rem; padding-block: 22px; }
+  .faq details > div { padding-right: 5px; }
+  .contact-section { padding-block: 20px 50px; }
+  .contact-help { padding-left: 20px; }
+  .legal-content { padding-block: 38px 50px; }
+  .legal-content section { margin-top: 38px; }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  html { scroll-behavior: smooth; }
+}
+
+@media print {
+  .site-header nav, .draft-note, .hero-icon, .button { display: none; }
+  :root { background: white; color: black; font-size: 12pt; }
+  .wrapper { width: 100%; }
+  .hero, .how-to-layout, .contact-section { display: block; }
+  .how-to { background: white; color: black; }
+  .steps span { color: black; }
+  .legal-content section { break-inside: avoid; }
+}
