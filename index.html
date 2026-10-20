@@ -8,6 +8,8 @@
   <title>Gone Sour · Hilfe & Kontakt</title>
   <link rel="icon" href="assets/app-icon.png" type="image/png">
   <link rel="stylesheet" href="styles.css">
+  <link rel="alternate" hreflang="de" href="index.html">
+  <link rel="alternate" hreflang="en" href="en/index.html">
 </head>
 <body>
   <a class="skip-link" href="#inhalt">Zum Inhalt</a>
@@ -16,10 +18,16 @@
       <img src="assets/app-icon.png" width="44" height="44" alt="">
       <span>Gone Sour</span>
     </a>
-    <nav aria-label="Hauptnavigation">
-      <a href="index.html" aria-current="page">Hilfe</a>
-      <a href="privacy.html">Datenschutz</a>
-    </nav>
+    <div class="header-navigation">
+      <nav aria-label="Hauptnavigation">
+        <a href="index.html" aria-current="page">Hilfe</a>
+        <a href="privacy.html">Datenschutz</a>
+      </nav>
+      <nav class="language-switch" aria-label="Sprache">
+        <a href="index.html" lang="de" hreflang="de" aria-current="page">Deutsch</a>
+        <a href="en/index.html" lang="en" hreflang="en" rel="alternate">English</a>
+      </nav>
+    </div>
   </header>
 
   <main id="inhalt">
