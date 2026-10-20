@@ -1,6 +1,6 @@
-# opened · Hilfe und Datenschutz
+# Gone Sour · Hilfe und Datenschutz
 
-Statische Website für opened, veröffentlicht mit GitHub Pages:
+Statische Website für Gone Sour, veröffentlicht mit GitHub Pages:
 
 - [Hilfe und Kontakt](https://brightfold-apps.github.io/opened-support/)
 - [Datenschutz](https://brightfold-apps.github.io/opened-support/privacy.html)

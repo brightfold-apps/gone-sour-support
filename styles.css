@@ -95,6 +95,10 @@ h3 { font-size: 1.1rem; margin: 0 0 .75rem; }
   .legal-content section { margin-top: 38px; }
 }
 
+@media (max-width: 400px) {
+  .site-header { flex-wrap: wrap; gap: 12px 20px; }
+}
+
 @media (prefers-reduced-motion: no-preference) {
   html { scroll-behavior: smooth; }
 }
