@@ -30,12 +30,16 @@ h3 { font-size: 1.1rem; margin: 0 0 .75rem; }
 .skip-link { position: absolute; top: -100px; left: 20px; padding: 12px 20px; background: var(--surface); z-index: 5; }
 .skip-link:focus { top: 12px; }
 .draft-note { padding: 10px 24px; text-align: center; font-size: .82rem; background: #e8e4d3; color: #4b4c3b; }
-.site-header { display: flex; align-items: center; justify-content: space-between; gap: 20px; padding-block: 26px; }
+.site-header { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 20px; padding-block: 26px; }
 .brand { display: inline-flex; align-items: center; gap: 12px; color: var(--ink); text-decoration: none; font-size: 1.5rem; font-weight: 750; letter-spacing: -.03em; }
 .brand img { border-radius: 12px; }
-.site-header nav { display: flex; align-items: center; gap: 28px; font-size: .9rem; }
-.site-header nav a { padding-block: 8px; text-decoration: none; }
+.header-navigation { display: flex; flex-wrap: wrap; align-items: center; gap: 16px 28px; }
+.site-header nav { display: flex; flex-wrap: wrap; align-items: center; gap: 28px; font-size: .9rem; }
+.site-header nav a { display: inline-flex; align-items: center; min-height: 44px; padding-block: 8px; text-decoration: none; }
 .site-header nav a[aria-current="page"] { text-decoration: underline; text-decoration-thickness: 2px; }
+.site-header .language-switch { gap: 4px; padding: 3px; border: 1px solid var(--line); border-radius: 12px; }
+.language-switch a { padding-inline: 12px; border-radius: 8px; }
+.language-switch a[aria-current="page"] { color: var(--surface); background: var(--green); font-weight: 650; }
 .hero { display: grid; grid-template-columns: 1fr 280px; align-items: center; gap: 85px; padding-block: 70px 95px; }
 .eyebrow { color: var(--green); font-size: .76rem; letter-spacing: .14em; text-transform: uppercase; font-weight: 700; margin-bottom: 18px; }
 .intro { font-size: 1.2rem; line-height: 1.6; max-width: 34em; }
@@ -76,12 +80,14 @@ h3 { font-size: 1.1rem; margin: 0 0 .75rem; }
 @media (max-width: 760px) {
   .wrapper { width: calc(100% - 40px); }
   .site-header { padding-block: 20px; }
+  .header-navigation { width: 100%; justify-content: space-between; gap: 12px 20px; }
   .site-header nav { gap: 18px; font-size: .82rem; }
   .brand { gap: 9px; font-size: 1.3rem; }
   .brand img { width: 36px; height: 36px; border-radius: 10px; }
   .hero { grid-template-columns: 1fr; gap: 35px; padding-block: 45px 60px; }
   .hero-icon { width: 150px; height: 150px; grid-row: 1; }
   .hero h1 { font-size: clamp(3rem, 13vw, 4.5rem); }
+  .hero:lang(en) h1 { font-size: clamp(2.4rem, 12vw, 4.5rem); }
   .intro { font-size: 1.1rem; }
   .how-to-layout, .contact-section { grid-template-columns: 1fr; gap: 25px; }
   .how-to { padding-block: 38px; }
