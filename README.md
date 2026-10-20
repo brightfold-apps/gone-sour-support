@@ -2,18 +2,18 @@
 
 Statische Website für Gone Sour, veröffentlicht mit GitHub Pages:
 
-- [Hilfe und Kontakt](https://brightfold-apps.github.io/opened-support/)
-- [Datenschutz](https://brightfold-apps.github.io/opened-support/privacy.html)
+- [Hilfe und Kontakt](https://brightfold-apps.github.io/gone-sour-support/)
+- [Datenschutz](https://brightfold-apps.github.io/gone-sour-support/privacy.html)
 
 ## Eigene Angaben ergänzen
 
 Die Website ist ein öffentlich sichtbarer Entwurf. Vor Verwendung für die App-Prüfung müssen die Anbieter-/Kontaktangaben und der tatsächliche Umgang mit Supportanfragen ergänzt werden.
 
-1. [Supportseite bearbeiten](https://github.com/brightfold-apps/opened-support/edit/main/index.html): Unter „Kontakt & Support“ den bereits eingetragenen Namen prüfen sowie Postanschrift und Support-E-Mail ergänzen. Den markierten Block `pending-contact` durch echte Angaben ersetzen; die E-Mail als `mailto:`-Link eintragen.
-2. [Datenschutzseite bearbeiten](https://github.com/brightfold-apps/opened-support/edit/main/privacy.html): Unter „Wer verantwortlich ist“ denselben vollständigen Namen, dieselbe Postanschrift und eine E-Mail für Datenschutzanfragen angeben. Dafür kann dieselbe Supportadresse verwendet werden.
+1. [Supportseite bearbeiten](https://github.com/brightfold-apps/gone-sour-support/edit/main/index.html): Unter „Kontakt & Support“ den bereits eingetragenen Namen prüfen sowie Postanschrift und Support-E-Mail ergänzen. Den markierten Block `pending-contact` durch echte Angaben ersetzen; die E-Mail als `mailto:`-Link eintragen.
+2. [Datenschutzseite bearbeiten](https://github.com/brightfold-apps/gone-sour-support/edit/main/privacy.html): Unter „Wer verantwortlich ist“ denselben vollständigen Namen, dieselbe Postanschrift und eine E-Mail für Datenschutzanfragen angeben. Dafür kann dieselbe Supportadresse verwendet werden.
 3. In derselben Datei im Abschnitt „Wenn du den Support kontaktierst“ den tatsächlichen E-Mail-Anbieter, einen Link zu seinen Datenschutzhinweisen, gegebenenfalls internationale Verarbeitung und die tatsächlich praktizierte Löschfrist oder konkrete Löschkriterien ergänzen. Diese Angaben sind noch unbekannt und wurden nicht erfunden. Auch Kopien und Backups des verwendeten Postfachs berücksichtigen.
 4. Die übrigen Beschreibungen mit der tatsächlichen Nutzung abgleichen. In beiden Dateien den Hinweis mit `class="draft-note"` und die Zeile `<meta name="robots" content="noindex,nofollow">` entfernen, sobald alle Angaben vollständig sind. Bei ausgefüllten Blöcken auch die Klasse `pending-contact` entfernen.
-5. Änderungen speichern. GitHub Pages aktualisiert die Website automatisch. Den Erfolg unter [Actions](https://github.com/brightfold-apps/opened-support/actions) prüfen und anschließend beide Seiten ohne Anmeldung öffnen.
+5. Änderungen speichern. GitHub Pages aktualisiert die Website automatisch. Den Erfolg unter [Actions](https://github.com/brightfold-apps/gone-sour-support/actions) prüfen und anschließend beide Seiten ohne Anmeldung öffnen.
 
 ### Welche eigenen Angaben gehören hinein?
 
